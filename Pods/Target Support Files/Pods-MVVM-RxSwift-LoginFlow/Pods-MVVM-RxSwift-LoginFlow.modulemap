@@ -1,0 +1,6 @@
+framework module Pods_MVVM_RxSwift_LoginFlow {
+  umbrella header "Pods-MVVM-RxSwift-LoginFlow-umbrella.h"
+
+  export *
+  module * { export * }
+}

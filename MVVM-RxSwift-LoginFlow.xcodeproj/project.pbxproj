@@ -12,6 +12,7 @@
 		028A069220D96B1400F135D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 028A069020D96B1400F135D1 /* Main.storyboard */; };
 		028A069420D96B1600F135D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 028A069320D96B1600F135D1 /* Assets.xcassets */; };
 		028A069720D96B1600F135D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 028A069520D96B1600F135D1 /* LaunchScreen.storyboard */; };
+		D8CDF3199E2093FB47F814C6 /* Pods_MVVM_RxSwift_LoginFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391D74D252D3F0F72BFBC7C1 /* Pods_MVVM_RxSwift_LoginFlow.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		028A069320D96B1600F135D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		028A069620D96B1600F135D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		028A069820D96B1600F135D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		391D74D252D3F0F72BFBC7C1 /* Pods_MVVM_RxSwift_LoginFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_RxSwift_LoginFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7590AFA59417279C75475E55 /* Pods-MVVM-RxSwift-LoginFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-RxSwift-LoginFlow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-RxSwift-LoginFlow/Pods-MVVM-RxSwift-LoginFlow.release.xcconfig"; sourceTree = "<group>"; };
+		A44ED279AC24B47C5E8243F0 /* Pods-MVVM-RxSwift-LoginFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-RxSwift-LoginFlow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-RxSwift-LoginFlow/Pods-MVVM-RxSwift-LoginFlow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8CDF3199E2093FB47F814C6 /* Pods_MVVM_RxSwift_LoginFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				028A068B20D96B1400F135D1 /* MVVM-RxSwift-LoginFlow */,
 				028A068A20D96B1400F135D1 /* Products */,
+				B19269D2A9698E2A686D25CD /* Pods */,
+				66129F8884AB99C60DF76AB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "MVVM-RxSwift-LoginFlow";
 			sourceTree = "<group>";
 		};
+		66129F8884AB99C60DF76AB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				391D74D252D3F0F72BFBC7C1 /* Pods_MVVM_RxSwift_LoginFlow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B19269D2A9698E2A686D25CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A44ED279AC24B47C5E8243F0 /* Pods-MVVM-RxSwift-LoginFlow.debug.xcconfig */,
+				7590AFA59417279C75475E55 /* Pods-MVVM-RxSwift-LoginFlow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 028A069B20D96B1600F135D1 /* Build configuration list for PBXNativeTarget "MVVM-RxSwift-LoginFlow" */;
 			buildPhases = (
+				3D720CE98AB8534642463796 /* [CP] Check Pods Manifest.lock */,
 				028A068520D96B1400F135D1 /* Sources */,
 				028A068620D96B1400F135D1 /* Frameworks */,
 				028A068720D96B1400F135D1 /* Resources */,
+				B420F31445C9258D635F4D2D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D720CE98AB8534642463796 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM-RxSwift-LoginFlow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B420F31445C9258D635F4D2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MVVM-RxSwift-LoginFlow/Pods-MVVM-RxSwift-LoginFlow-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVM-RxSwift-LoginFlow/Pods-MVVM-RxSwift-LoginFlow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		028A068520D96B1400F135D1 /* Sources */ = {
@@ -278,14 +345,12 @@
 		};
 		028A069C20D96B1600F135D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A44ED279AC24B47C5E8243F0 /* Pods-MVVM-RxSwift-LoginFlow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "MVVM-RxSwift-LoginFlow/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "svch.MVVM-RxSwift-LoginFlow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -295,14 +360,12 @@
 		};
 		028A069D20D96B1600F135D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7590AFA59417279C75475E55 /* Pods-MVVM-RxSwift-LoginFlow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "MVVM-RxSwift-LoginFlow/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "svch.MVVM-RxSwift-LoginFlow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
