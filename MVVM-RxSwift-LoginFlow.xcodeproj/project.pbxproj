@@ -13,6 +13,8 @@
 		02091F1620D973F3003A224B /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02091F1520D973F3003A224B /* ViewModelType.swift */; };
 		02091F1920D97557003A224B /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02091F1820D97557003A224B /* Credentials.swift */; };
 		02091F1C20D975DA003A224B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02091F1B20D975DA003A224B /* User.swift */; };
+		02091F1E20D98266003A224B /* Observable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02091F1D20D98266003A224B /* Observable+Extensions.swift */; };
+		02091F2120D983D8003A224B /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02091F2020D983D8003A224B /* UIViewController+Extensions.swift */; };
 		028A068D20D96B1400F135D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028A068C20D96B1400F135D1 /* AppDelegate.swift */; };
 		028A068F20D96B1400F135D1 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028A068E20D96B1400F135D1 /* LoginController.swift */; };
 		028A069220D96B1400F135D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 028A069020D96B1400F135D1 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		02091F1520D973F3003A224B /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		02091F1820D97557003A224B /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		02091F1B20D975DA003A224B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		02091F1D20D98266003A224B /* Observable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Extensions.swift"; sourceTree = "<group>"; };
+		02091F2020D983D8003A224B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		028A068920D96B1400F135D1 /* MVVM-RxSwift-LoginFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-RxSwift-LoginFlow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		028A068C20D96B1400F135D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		028A068E20D96B1400F135D1 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		02091F1F20D9827E003A224B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				02091F1D20D98266003A224B /* Observable+Extensions.swift */,
+				02091F2020D983D8003A224B /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		028A068020D96B1400F135D1 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				028A068C20D96B1400F135D1 /* AppDelegate.swift */,
+				02091F1F20D9827E003A224B /* Extensions */,
 				02091F1720D97419003A224B /* Protocols */,
 				02091F1220D96FAD003A224B /* Services */,
 				02091F0C20D96E87003A224B /* ViewModels */,
@@ -262,11 +276,13 @@
 			files = (
 				028A068F20D96B1400F135D1 /* LoginController.swift in Sources */,
 				02091F0B20D96E63003A224B /* LoginControllerViewModel.swift in Sources */,
+				02091F2120D983D8003A224B /* UIViewController+Extensions.swift in Sources */,
 				02091F1620D973F3003A224B /* ViewModelType.swift in Sources */,
 				02091F1920D97557003A224B /* Credentials.swift in Sources */,
 				02091F1C20D975DA003A224B /* User.swift in Sources */,
 				02091F1420D973D9003A224B /* ControllerType.swift in Sources */,
 				028A068D20D96B1400F135D1 /* AppDelegate.swift in Sources */,
+				02091F1E20D98266003A224B /* Observable+Extensions.swift in Sources */,
 				02091F1120D96F8E003A224B /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

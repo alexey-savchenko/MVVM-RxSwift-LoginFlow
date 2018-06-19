@@ -15,6 +15,12 @@ protocol LoginServiceProtocol {
 
 class LoginService: LoginServiceProtocol {
     func signIn(with credentials: Credentials) -> Observable<User> {
-        return Observable.never()
+        return Observable.create { observer in
+            /*
+             Networking logic here.
+            */
+            observer.onNext(User()) // Simulation of successful user authentication.
+            return Disposables.create()
+        }
     }
 }
