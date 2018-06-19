@@ -8,10 +8,11 @@
 
 import UIKit
 
-class LoginController: UIViewController {
+class LoginController: UIViewController, ControllerType {
+    typealias ViewModelType = LoginControllerViewModel
     
     // MARK: - Properties
-    var viewModel: LoginControllerViewModel!
+    var viewModel: ViewModelType!
     
     // MARK: - UI
     @IBOutlet weak var passwordTextfield: UITextField!
@@ -21,22 +22,19 @@ class LoginController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        configure(with: viewModel)
     }
     
     // MARK: - Functions
-    func configure(with viewModel: LoginControllerViewModel) {
+    func configure(with viewModel: ViewModelType) {
         
     }
-    
 }
 
 extension LoginController {
     /// Factory function for LoginController instatiation
     ///
     /// - Parameter viewModel: View model object
-    open class func create(with viewModel: LoginControllerViewModel) -> UIViewController {
+    static func create(with viewModel: ViewModelType) -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "LoginController") as! LoginController
         controller.viewModel = viewModel

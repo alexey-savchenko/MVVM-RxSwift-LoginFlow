@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LoginControllerViewModel {
+class LoginControllerViewModel: ViewModelProtocol {
     struct Input {
     }
     struct Output {

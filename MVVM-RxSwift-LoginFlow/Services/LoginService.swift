@@ -7,11 +7,14 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol LoginServiceProtocol {
-    
+    func signIn(with credentials: Credentials) -> Observable<User>
 }
 
 class LoginService: LoginServiceProtocol {
-    
+    func signIn(with credentials: Credentials) -> Observable<User> {
+        return Observable.never()
+    }
 }
